@@ -3,7 +3,13 @@ import PropTypes from "prop-types";
 
 function Movie(props) {
   const { id, title, year, summary, poster } = props;
-  return <h4>{title}</h4>;
+  return (
+    <div className='movie__data'>
+      <div>{title}</div>
+      <h5>{year}</h5>
+      <p>{summary}</p>
+    </div>
+  );
 }
 
 Movie.propType = {
